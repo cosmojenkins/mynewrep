@@ -1,11 +1,10 @@
-package src.main.java.module;
+package module;
 
 
 import java.util.Random;
 
 @SuppressWarnings("all")
 public class Kotik {
-
 
     private int satiety = 10;
     private int weight;
@@ -70,33 +69,33 @@ public class Kotik {
 
     private boolean play() {
         if (satiety > 0) {
-            System.out.println("Котик Пушистик играет");
+            System.out.println("РљРѕС‚РёРє РџСѓС€РёСЃС‚РёРє РёРіСЂР°РµС‚");
             satiety--;
             return true;
         } else {
-            System.out.println("Покормите кота, люди");
+            System.out.println("РџРѕРєРѕСЂРјРёС‚Рµ РєРѕС‚Р°, Р»СЋРґРё");
             return false;
         }
     }
 
     private boolean sleep() {
         if (satiety > 0) {
-            System.out.println("Котик спит");
+            System.out.println("РљРѕС‚РёРє СЃРїРёС‚");
             satiety--;
             return true;
         } else {
-            System.out.println("Покормите кота, люди");
+            System.out.println("РџРѕРєРѕСЂРјРёС‚Рµ РєРѕС‚Р°, Р»СЋРґРё");
             return false;
         }
     }
 
     private boolean chaseMouse() {
         if (satiety > 0) {
-            System.out.println("Котик бегает за мышкой");
+            System.out.println("РљРѕС‚РёРє Р±РµРіР°РµС‚ Р·Р° РјС‹С€РєРѕР№");
             satiety--;
             return true;
         } else {
-            System.out.println("Покормите кота, люди");
+            System.out.println("РџРѕРєРѕСЂРјРёС‚Рµ РєРѕС‚Р°, Р»СЋРґРё");
             return false;
         }
     }
@@ -109,7 +108,7 @@ public class Kotik {
 
     private boolean eat(int myaso) {
         satiety = satiety + myaso;
-        System.out.println("Кошак поел");
+        System.out.println("РљРѕС€Р°Рє РїРѕРµР»");
 
         return true;
 
@@ -117,18 +116,18 @@ public class Kotik {
 
     private boolean eat(String food, int food2) {
         satiety = satiety + food2;
-        System.out.println("Котяра поел " + food);
+        System.out.println("РљРѕС‚СЏСЂР° РїРѕРµР» " + food);
 
         return true;
     }
 
     private boolean jump() {
         if (satiety > 0) {
-            System.out.println("Котик прыгает");
+            System.out.println("РљРѕС‚РёРє РїСЂС‹РіР°РµС‚");
             satiety--;
             return true;
         } else {
-            System.out.println("Котик хочет кушац");
+            System.out.println("РљРѕС‚РёРє С…РѕС‡РµС‚ РєСѓС€Р°С†");
             return false;
         }
 
