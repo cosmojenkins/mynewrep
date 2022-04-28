@@ -1,6 +1,6 @@
 
 
-import src.main.java.module.Kotik;
+import module.Kotik;
 
 @SuppressWarnings("all")
 public class Application {
