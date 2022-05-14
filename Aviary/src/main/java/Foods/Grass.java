@@ -1,4 +1,3 @@
-
 package Foods;
 
 public class Grass extends Food {

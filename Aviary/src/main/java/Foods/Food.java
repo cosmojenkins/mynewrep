@@ -1,7 +1,7 @@
-
 package Foods;
 
 public abstract class Food {
+
     protected int satiety;
 
     public Food() {

@@ -1,13 +1,29 @@
+import Animals.Animals;
+import Animals.carnivores.Bear;
+import Animals.carnivores.Tiger;
+import Animals.carnivores.Wolf;
+import Animals.herbivores.Duck;
+import Foods.Food;
+import Foods.WrongFoodExeptions;
+
 public class Worker {
-    public Worker() { /* compiled code */ }
+    public void feed(Animals animals, Food food) throws WrongFoodExeptions {
+        animals.eat(food);
+    }
 
-    public void feed(Animals.Animals animals, Foods.Food food) { /* compiled code */ }
+    public void getVoice(Tiger tiger) {
+        System.out.println("Worker ABUSING animal with " + tiger.voice());
+    }
 
-    public void getVoice(Animals.carnivores.Tiger tiger) { /* compiled code */ }
+    public void getVoice(Bear bear) {
+        System.out.println("Worker ABUSING animal with " + bear.voice());
+    }
 
-    public void getVoice(Animals.carnivores.Bear bear) { /* compiled code */ }
+    public void getVoice(Wolf wolf) {
+        System.out.println("Worker ABUSING animal with " + wolf.voice());
+    }
 
-    public void getVoice(Animals.carnivores.Wolf wolf) { /* compiled code */ }
-
-    public void getVoice(Animals.herbivores.Duck duck) { /* compiled code */ }
+    public void getVoice(Duck duck) {
+        System.out.println("Worker ABUSING animal with " + duck.voice());
+    }
 }
