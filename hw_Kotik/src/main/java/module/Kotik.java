@@ -15,10 +15,6 @@ public class Kotik {
     private static int countCat;
 
 
-    public static int getCountCat() {
-        return countCat;
-    }
-
     public Kotik(int pretiness, String name, int weight, String meow) {
         this.prettiness = pretiness;
         this.name = name;
@@ -26,6 +22,9 @@ public class Kotik {
         this.meow = meow;
         countCat++;
 
+    }
+    public static int getCountCat() {
+        return countCat;
     }
 
     public Kotik() {
