@@ -35,7 +35,6 @@ public class AvitoTest {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 
-    @BeforeClass
     @Severity(SeverityLevel.CRITICAL)
     @Step(value = "Открытие браузера, переход на сайт avito.ru")
     public void firstStep() {
