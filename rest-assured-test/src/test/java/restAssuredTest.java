@@ -3,6 +3,7 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
+import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -29,6 +30,13 @@ public class restAssuredTest {
     }
 
     @Test
+    public void testSwagger() throws IOException {
+        postAndGetTest();
+        deleteTest();
+        secondGet();
+    }
+
+    @Step
     public void postAndGetTest() {
         ORDER order = new ORDER();
         Integer petId = new Random().nextInt(2000);
@@ -58,7 +66,7 @@ public class restAssuredTest {
         Assert.assertEquals(actualGet.getId(), order.getId());
     }
 
-    @Test
+    @Step
     public void deleteTest() throws IOException {
         System.getProperties().load(ClassLoader.getSystemResourceAsStream("my.properties"));
         given()
@@ -76,7 +84,7 @@ public class restAssuredTest {
                 .statusCode(404);
     }
 
-    @Test
+    @Step
     public void secondGet() {
         Map storeInventory = given()
                 .when()
