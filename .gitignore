@@ -1,5 +1,9 @@
 ### Maven template
+.allure
+build
+allure-results
 .idea
+resources
 target/
 pom.xml.tag
 pom.xml.releaseBackup
