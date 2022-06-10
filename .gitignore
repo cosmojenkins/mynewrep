@@ -1,4 +1,7 @@
 ### Maven template
+.allure
+build
+allure-results
 .idea
 resources
 target/
